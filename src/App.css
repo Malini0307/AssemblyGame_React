@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header styles */
+.container{
+  text-align: center;
+}
+.container .title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F9F4DA;
+}
+.container .instructions{
+  font-size: 0.875rem;
+  max-width: 350px;
+  color: #8E8E8E;
+}
+
+/* Game status */
+div.status{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  min-height: 60px;
+  border-radius: 5px;
+  text-align: center;
+  color: #F9F4DA;
+  margin-block: 30px;
+}
+
+div.status p.farewell-message{
+  font-style: italic;
+  font-weight: 400;
+}
+
+div.status.won{
+  background-color: #10a95b;
+}
+div.status.lost{
+  background-color: #Ba2a2a;
+}
+div.status.farewell{
+  background-color: #7a5ea7 ;
+  border: 1px dashed #323232;
+}
+
+div.status h4{
+  margin: 5px;
+  font-size: 17px;
+}
+div.status p{
+  margin: 5px;
+}
+
+
+/* Assembly language */
+div.language-chips{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 350px;
+  margin-bottom: 35px;
+ 
+}
+span.chip{
+   padding: 4px;
+   border-radius: 5px;
+   position: relative;
+  
+}
+
+span.chip.lost::before{
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* word display */
+div.word{
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+div.word span{
+  display: flex;
+  background-color: #323232;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #F9F4DA;
+  font-size: 1.125rem;
+  border-bottom: 1px solid #F9F4DA;
+  margin-bottom: 30px;
+}
+
+div.word span.missed-letter{
+  color: #ec5d49;
+}
+
+/* Keyboard styling */
+div.characters{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  max-width: 350px;
+}
+
+div.characters button{
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid #D7D7D7;
+  border-radius: 3px;
+  background-color: #FCBA29;
+}
+div.characters button.correct{
+  background-color: #10A95B;
+}
+div.characters button.wrong{
+  background-color: #EC5D49;
+}
+div.characters button:disabled{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* New game button */
+.newGame{
+  margin-top: 30px;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(28, 170, 231);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* aria screen reader only */
+section.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0,0,0,0);
+}
