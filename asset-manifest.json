@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AssemblyGame_React/static/css/main.e7490336.css",
+    "main.js": "/AssemblyGame_React/static/js/main.10506153.js",
+    "static/js/488.95e83ebe.chunk.js": "/AssemblyGame_React/static/js/488.95e83ebe.chunk.js",
+    "index.html": "/AssemblyGame_React/index.html",
+    "main.e7490336.css.map": "/AssemblyGame_React/static/css/main.e7490336.css.map",
+    "main.10506153.js.map": "/AssemblyGame_React/static/js/main.10506153.js.map",
+    "488.95e83ebe.chunk.js.map": "/AssemblyGame_React/static/js/488.95e83ebe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7490336.css",
+    "static/js/main.10506153.js"
+  ]
+}
